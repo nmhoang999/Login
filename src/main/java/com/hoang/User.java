@@ -35,13 +35,12 @@ public class User {
         this.message = message;
     }
 
-    public String doLogin() {
+    public void doLogin() {
         if (userName.equals("admin") && passWorld.equals("pass")) {
             message = "Successful";
         } else {
             message = "wrong Username or Passworld";
         }
         System.out.println(userName + passWorld);
-        return null;
     }
 }
