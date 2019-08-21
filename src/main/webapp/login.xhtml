@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:form>
+        <h1>
+            <h:outputLabel value="Login Page"/>
+        </h1>
+        <h:outputText value="Enter User Name:"/>
+        <h:inputText value="#{man.userName}"></h:inputText>
+        <br/>
+        <h:outputText value="Enter Passworld:"/>
+        <h:inputText value="#{man.passWorld}"></h:inputText>
+        <br/>
+        <h:commandButton value="Login" action="#{man.doLogin}"></h:commandButton>
+        <h:outputLabel value="#{man.message}"></h:outputLabel>
+    </h:form>
+
+</f:view>
+</html>
